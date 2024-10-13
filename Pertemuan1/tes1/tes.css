@@ -1,0 +1,38 @@
+.shop-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    height: 20px;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.shop-wrapper:hover .oomaga-loc, 
+.shop-wrapper:hover .oomaga-shop {
+    transform: translateY(-20px);
+}
+
+
+.oomaga-loc {
+    height: 20px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.oomaga-shop {
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+p {
+    color: yellow;
+}
+
+.tesaja {
+    color: red;
+}
+
+#apa {
+    color: blue;
+}

@@ -1,0 +1,50 @@
+h1 {
+  color: blue;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+a {
+  margin: inherit;
+}
+
+p {
+  color: green;
+  font-size: 18px;
+}
+
+p.one {
+  border-style: solid;
+  border-color: #ff0000; /* red */
+  border-width: 25px 10px 4px 35px;
+}
+
+p.two {
+  border: 6px solid blue;
+}
+
+p.three {
+  border-bottom: 2px dashed green;
+}
+
+p {
+  margin-top: 100px;
+  margin-right: 150px;
+  margin-bottom: 100px;
+  margin-left: 80px;
+}
+
+p {
+  margin: 25px auto;
+}
+
+div {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+div {
+  padding: 25px 50px 75px 100px;
+}
