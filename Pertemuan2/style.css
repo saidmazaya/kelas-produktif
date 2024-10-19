@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-color: #1cd6cb;
+  --secondary-color: #2c3e50;
+  --text-color: #333;
+  --text-color-2: #f6f8f8;
+  --bg-color: #f4f4f4;
+  --accent-color: #e74c3c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar */
+nav {
+  background-color: var(--primary-color);
+  color: var(--text-color-2);
+  padding: 16px;
+  position: sticky;
+  top: 0;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 16px;
+}
+
+.nav-links a {
+  color: var(--text-color-2);
+  text-decoration: none;
+  padding: 8px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: var(--secondary-color);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+input[type="checkbox"]:checked~.nav-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: var(--text-color);
+  width: 100%;
+  padding: 10px 16px;
+}
+
+.main-content {
+  display: flex;
+  margin: 32px 0;
+}
+
+.content {
+  flex: 3;
+  padding-right: 16px;
+}
+
+.aside {
+  flex: 1;
+  background-color: var(--bg-color);
+  padding: 16px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-color-2);
+  text-align: center;
+  padding: 16px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .content {
+    padding-right: 0;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links li {
+    padding: 4px 0;
+  }
+
+  .hamburger {
+    display: block;
+    content: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/800px-Hamburger_icon.svg.png');
+    width: 30px;
+    height: 30px;
+  }
+}
+
+#contact-form {
+  margin-top: 8px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: blue;
+  color: var(--text-color-2);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+}
+
+#error-message {
+  color: red;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+#success-message {
+  color: green;
+  margin-top: 16px;
+  font-weight: bold;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<p class="paragraf" id="paragrafsatu">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate aut et quod porro non quaerat, exercitationem eveniet autem, officia excepturi soluta quidem! Voluptatibus culpa suscipit maxime animi aliquid, eius sit, veniam magnam numquam
+			possimus omnis dolorem in libero, unde hic commodi nobis corrupti consequatur labore minus. Quibusdam, optio recusandae praesentium aliquam minima quae illum veniam ullam asperiores aspernatur, maxime ea eius, suscipit ex reiciendis omnis ut
+			repellendus! Est exercitationem, odit cupiditate eaque quas impedit? Temporibus id in tenetur non labore ex eveniet suscipit voluptates nisi maxime repudiandae et magni, animi adipisci aut ut consequatur. Reprehenderit sunt nam quasi corrupti
+			odit.
+		</p>
+
+		<p class="paragraf" id="paragrafdua">
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat harum aspernatur, incidunt at maiores culpa explicabo saepe quis impedit deserunt dolores. Numquam unde molestias debitis rerum illum consequuntur cumque, consequatur sapiente
+			velit recusandae obcaecati, autem expedita, quae voluptate id nam! Numquam optio voluptatem dicta similique repellendus deserunt minima ipsum alias corrupti veniam. Debitis suscipit eos inventore obcaecati, dicta repellat laboriosam atque nisi
+			eveniet quam quod qui itaque cumque illum molestias distinctio pariatur quo dolore minima. Blanditiis exercitationem doloribus voluptates unde minima quos fugiat, modi a similique! Possimus harum, nesciunt illum velit placeat, reprehenderit sed
+			eligendi ullam, molestiae voluptas repellat fugiat.
+		</p>
+
+		<article class="paragraf">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, temporibus expedita cum consectetur minima doloremque eaque corrupti consequatur, saepe aliquid provident aperiam soluta, dolore repudiandae labore sed at! Nostrum blanditiis
+			adipisci, voluptatum repellendus est, esse corrupti fugiat natus quo a, ad nihil eius modi sed eos. Minus, tempore quia aliquid laboriosam ratione ex aperiam neque, quibusdam amet quod, veritatis corrupti assumenda! Hic explicabo aperiam
+			officiis sint expedita praesentium. Voluptatibus excepturi voluptas blanditiis veniam nihil esse reiciendis. Et delectus eligendi similique nulla molestias commodi minima eius excepturi numquam, quidem nobis perspiciatis laboriosam quam soluta,
+			ut corrupti sapiente ad id porro reiciendis.
+		</article>
+		<br />
+
+		<div name="tes">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur in tempore vero, necessitatibus et fugit quae alias? Beatae harum natus sit tenetur neque laudantium, repudiandae distinctio quis maiores aspernatur est esse ratione non
+			numquam omnis dolore blanditiis, expedita animi, nulla explicabo inventore minima. Ea cumque commodi amet beatae, vel incidunt fuga necessitatibus eum praesentium dolorem illo atque itaque perspiciatis quis ipsam quae reprehenderit sit
+			assumenda eius ducimus magnam in. Placeat minima temporibus ducimus dolor hic! Nemo earum debitis corrupti ex iure numquam, quae similique quia facilis est culpa voluptatem reprehenderit porro nulla rerum ea ducimus nisi consequatur delectus?
+			Repellat, quo.
+		</div>
+		<br />
+
+		<div class="paragraf" id="paragraftiga">
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsam, velit at natus, ratione dolorum quam fugiat assumenda quaerat est sed. Fuga qui mollitia placeat aliquam, modi ab iste animi itaque similique dolores quis rem quo cum,
+			enim ea voluptates ipsam ducimus. Nam culpa expedita vero, eaque maxime asperiores. Nulla sunt in ex quidem? Et, at saepe praesentium provident rerum consequuntur soluta tempore. Cumque labore autem sint quas nobis quibusdam, dignissimos qui
+			recusandae? Alias doloribus ducimus doloremque quae, est, rerum nostrum animi magni, velit possimus voluptatum fugit consequatur quisquam ullam cumque perferendis nulla. Eligendi est, mollitia possimus ratione quisquam consectetur!
+		</div>
+
+		<button onclick="runFunction()">Klik Saya</button>
+
+		<script>
+			function runFunction() {
+				document.getElementById("paragraftiga").style.color = "red";
+
+				let element = document.getElementsByTagName("p");
+				for (let i = 0; i < element.length; i++) {
+					element[i].style.color = "blue";
+				}
+
+				document.getElementsByClassName("paragraf")[2].style.color = "cyan";
+
+				document.getElementsByName("tes")[0].style.color = "yellow";
+			}
+		</script>
+	</body>
+</html>

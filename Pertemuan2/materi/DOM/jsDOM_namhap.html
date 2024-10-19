@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Daftar Jadwal</h1>
+
+		<ul id="jadwal"></ul>
+
+		<button onclick="tambahJadwal()">Tambah</button>
+		<button onclick="hapusJadwal()">Hapus</button>
+
+		<h1>Resep Nasi Goreng</h1>
+		<ul id="resepList">
+			<li>Nasi</li>
+			<li>Cabai</li>
+			<li>Bawang</li>
+			<li>Telur</li>
+		</ul>
+
+		<button onclick="hapusResep()">Hapus</button>
+
+		<script>
+			function tambahJadwal() {
+				let list = document.createElement('li');
+				let text = document.createTextNode('jadwal baru');
+
+				list.appendChild(text);
+
+				document.getElementById('jadwal').appendChild(list);
+			}
+
+			function hapusJadwal() {
+				let jadwal = document.getElementById('jadwal');
+				jadwal.removeChild(jadwal.lastChild);
+			}
+
+			function hapusResep() {
+				let resep = document.getElementById('resepList');
+				resep.removeChild(resep.lastChild);
+				// resep.removeChild(resep.childNodes[2]);
+				// resep.removeChild(resep.firstChild);
+			}
+		</script>
+	</body>
+</html>

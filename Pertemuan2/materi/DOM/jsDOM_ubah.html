@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<p id="paragraf">ini adalah teks yang belum di sentuh javascript</p>
+
+		<!-- <img src="../calendar.png" alt="" width="100px" id="myImage" /> -->
+
+		<p id="paragraf1" style="color: aqua">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cupiditate eaque excepturi, eos nostrum veritatis? Ducimus quia libero praesentium. Exercitationem, mollitia beatae! Nesciunt corrupti rem sit ad maxime nemo accusantium doloremque a
+			debitis suscipit ut iusto eligendi est dolor consequuntur deserunt quos, minus, adipisci commodi! Maiores nam accusamus atque modi.
+		</p>
+
+		<a href="as" id="link">sadsad</a>
+
+		<button onclick="testFunction()">Klik Saya</button>
+
+		<script>
+			function testFunction() {
+				document.getElementById('paragraf').innerHTML = 'ini yang sudah diubah oleh javascript';
+				document.getElementById('link').innerHTML = 'ini link yang sudah diubah oleh javascript';
+
+				// document.getElementById('myImage').src = '../handphone.png';
+				document.getElementById('link').href = 'datajs.html';
+
+				document.getElementById('paragraf1').style.color = 'green';
+				document.getElementById('paragraf1').style.backgroundColor = 'blue';
+				document.getElementById('paragraf1').style.padding = '10px';
+			}
+		</script>
+	</body>
+</html>
