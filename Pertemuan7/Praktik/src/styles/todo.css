@@ -1,0 +1,134 @@
+/* todo.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.todo-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.todo-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="text"] {
+  width: 95%;
+}
+
+button {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-btn {
+  background-color: #4CAF50;
+  color: white;
+  width: 100%;
+}
+
+.save-btn {
+  background-color: #FF9800;
+  color: white;
+  width: 100%;
+}
+
+.add-btn:hover, .save-btn:hover {
+  opacity: 0.8;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.task-list li:hover {
+  background-color: #f1f1f1;
+}
+
+.task-text {
+  cursor: pointer;
+  flex: 1;
+  word-break: break-word;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn {
+  background-color: #FFC107;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .todo-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+}
